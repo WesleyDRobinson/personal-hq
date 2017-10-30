@@ -33,6 +33,7 @@ const saveImage = () => {
     const gr = 1.618
     const ctx = canvas.getContext('2d')
     let lg = ctx.createLinearGradient(0, 0, 0, 0)
+    debugger
 }
 const play = (gameId) => {
     const iframeClasses = ['aspect-ratio--object', 'contain']
