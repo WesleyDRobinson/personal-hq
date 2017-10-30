@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Beautiful Homescreens</title>
+
+    <!-- Short description of the page (limit to 150 characters) -->
+    <meta name="description" content="for more beautiful home screens">
+
+    <!-- Add to iOS & Android Home Screen -->
+    <!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="">
+    <meta name="apple-mobile-web-app-title" content="">
+
+    <!-- Favicons for IE 11, Chrome, Firefox, Safari, Opera -->
+    <link href="assets/gradients/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="assets/gradients/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <!-- Touch Icons -->
+    <link href="assets/gradients/gradient180x180.png" rel="apple-touch-icon-precomposed" sizes="180x180">
+    <link href="assets/gradients/apple-touch-icon-57x57.png" rel="apple-touch-icon-precomposed" sizes="57x57">
+    <link href="assets/gradients/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="assets/gradients/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="assets/gradients/apple-touch-icon-120x120.png" rel="apple-touch-icon-precomposed" sizes="120x120">
+    <link href="assets/gradients/apple-touch-icon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="assets/gradients/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="152x152">
+    <link href="assets/gradients/gradient192x192.png" rel="icon" sizes="192x192">
+
+    <!-- Android Theme-->
+    <meta name="theme-color" content="#ff4a00">
+
+    <!-- stylesheets -->
+    <link href="https://unpkg.com/tachyons/css/tachyons.min.css" rel="stylesheet" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="gradients.css" rel="stylesheet">
+
+    <style>
+    </style>
+</head>
+<body class="w-100 near-black bg-near-white sans-serif tc">
+<div class="vh-100 gradientHex" id="wrapper">
+    <div class="h-100 flex flex-column justify-around">
+        <p class="f6 center measure">you may change the text below, press "add to homescreen" for further
+            instructions</p>
+        <h1 id="content" class="center db w-60 pa5 baskerville f1 fw1"
+            contenteditable>A</h1>
+        <a id="add-instructions"
+           class="dib center pv2 ph3 mv2 br3 ba pointer grow near-black hover-near-white hover-bg-dark-gray">
+            add to homescreen
+        </a>
+        <div id="game-buttons" class="pa3 flex items-center justify-center">
+            <a id="patatap" class="w4 pa2 br2 bg-orange link hide-child" href="#game">
+                <span>patatap</span>
+            </a>
+            <p class="mh3">← play a game →</p>
+            <a id="typatone" class="w4 pa2 br2 bg-orange link" href="#game">typatone</a>
+        </div>
+        <div class="pa3 flex justify-around items-center animated fadeIn">
+            <a id="change-button"
+               class="link pa3 br2 ba b--light-green ttu near-white hover-light-blue bg-animate bg-green hover-bg-dark-green animated fadeInLeft"
+               href="#wrapper">
+                change
+            </a>
+            <a id="flash-button"
+               class="link pa3 br2 ba b--light-green ttu near-white hover-light-blue bg-animate bg-green hover-bg-dark-green animated fadeInRight"
+               href="#wrapper">
+                flash
+            </a>
+        </div>
+    </div>
+    <div class="gradientSquare">
+        <article class="dn mw8 vh-100 center gradientSquare">
+            <div id="game" class="h-100 aspect-ratio aspect-ratio--4x3"></div>
+        </article>
+    </div>
+</div>
+
+<!-- Browserified JavaScript-->
+<script src="bundle.js"></script>
+</body>
+</html>

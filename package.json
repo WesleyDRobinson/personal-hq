@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "deploy": "browserify main.js -o public/bundle.js && now",
+    "dev": "watchify main.js -o public/bundle.js -v -d",
+    "start": "http-server"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "watchify": "^3.9.0",
+    "browserify": "^14.5.0",
+    "http-server": "^0.10.0"
+  },
+  "name": "personal-hq",
+  "version": "0.5.0",
+  "description": "making ios homescreens more beautiful",
+  "main": "main.js",
+  "author": "wesley",
+  "license": "MIT"
+}
